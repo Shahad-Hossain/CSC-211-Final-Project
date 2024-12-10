@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.js": "javascript",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "iostream": "cpp"
+    }
+}
