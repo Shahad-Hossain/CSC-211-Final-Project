@@ -11,11 +11,11 @@ int main()
     AllCustomers allCustomers;
     AllPurchases allPurchases;
 
-    // On launch, load data from files
-    // Adjust file names as needed
+    // customer and purchases data file
     string customerFile = "customers.txt";
     string purchaseFile = "purchases.txt";
 
+    //calls the load customer and purchases function which gets the values from the file and enters in the customer and purchase information
     allCustomers.loadCustomers(customerFile);
     allPurchases.loadPurchases(purchaseFile);
 
@@ -42,27 +42,42 @@ int main()
         // Validate input
         if (cin.fail())
         {
-            cin.clear();                                         // Clear the error flag
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input
+            cin.clear();                                         
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Invalid input! Please enter a number between 1 and 12." << endl;
             continue;
         }
 
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clean up any extra input
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
+        //prints all customers
         if (choice == 1)
         {
             allCustomers.printAllCustomers();
         }
+        //sorting by user choice of first name, last name, and account number
         else if (choice == 2)
         {
-            cout << "Enter 1 for ascending, 0 for descending: ";
+            cout << "Enter 0 to sort by descending order, and 1 to sort by ascending order: ";
             int asc;
             cin >> asc;
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            allCustomers.orderAndSort(asc == 1);
-            allCustomers.printAllCustomers();
+            int opt;
+            //cout << "Enter 0 to sort by first name, 1 for last name, 2 to sort by account number: ";
+            cout << "Enter 0 to sort by account number, 1 to sort by first name, 2 to sort by last name: ";
+            cin >> opt;
+            //Checks for valid input
+            if((asc == 0 || asc == 1) && (opt == 0 || opt == 1 || opt == 2))
+            {
+                //Sorts the customer list by the users choice
+                allCustomers.orderAndSort(asc, opt);
+                allCustomers.printAllCustomers();
+            }
+            else 
+            {
+                cout << "Please enter a valid number and try again" << endl;
+            }
         }
+        //Finds customer by account number
         else if (choice == 3)
         {
             cout << "Enter account number: ";
@@ -72,6 +87,7 @@ int main()
             allCustomers.printSpecificCustomer(acc);
             allPurchases.printPurchasesForCustomer(acc);
         }
+        //Finds purchases for a specific customer based on account number
         else if (choice == 4)
         {
             cout << "Enter account number: ";
@@ -81,6 +97,7 @@ int main()
             double total = allPurchases.getTotalSpendForCustomer(acc);
             cout << "Total spend for account #" << acc << " is $" << total << "\n";
         }
+        //Adds a new customer based on information provided
         else if (choice == 5)
         {
             string fn, ln, addr, c, s, ph;
@@ -105,6 +122,7 @@ int main()
             getline(cin, ph);
             allCustomers.addNewCustomer(fn, ln, acc, addr, c, s, zip, ph);
         }
+        //uses a recursive algorithm to add multiple customers at once
         else if (choice == 6)
         {
             cout << "How many customers do you want to add? ";
@@ -113,14 +131,17 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             allCustomers.addMultipleCustomers(amt);
         }
+        //updates user information based on account number
         else if (choice == 7)
         {
+            allCustomers.printAllCustomers();
             cout << "Enter account number to update: ";
             int acc;
             cin >> acc;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             allCustomers.updateAccountInformation(acc);
         }
+        //allows user to delete account via account number
         else if (choice == 8)
         {
             cout << "Enter account number to delete: ";
@@ -129,6 +150,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             allCustomers.deleteCustomer(acc);
         }
+        //Entering account number to add a purchase to
         else if (choice == 9)
         {
             cout << "Enter account number for the purchase: ";
@@ -147,6 +169,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             allPurchases.addNewPurchase(acc, it, d, amt);
         }
+        //Uses recursive algorithm to add multiple purchases
         else if (choice == 10)
         {
             cout << "Enter account number for purchases: ";
@@ -159,6 +182,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             allPurchases.addMultiplePurchases(pcount, acc);
         }
+        //Saves changes done in the program to the existing files or a new file based on user choice
         else if (choice == 11)
         {
             cout << "Save over existing files or new files? (1=existing, 2=new): ";
@@ -186,6 +210,7 @@ int main()
         }
     } while (true);
 
+    //Previous code using switch statement **ignore**
     /* bool running = true;
     while (running) {
         cout << "\n===== SHAHAD'S MIRCO CENTER =====\n";

@@ -37,12 +37,14 @@ public:
 
 class AllPurchases {
 private:
+    //vector of all purchases the customer did
     vector<purchase> purchase_list;
 
     // Recursive function to add multiple purchases
     void addMultiplePurchasesRecursive(int count, int account_num);
 
 public:
+    //Default constructors and deconstructors
     AllPurchases() {}
     ~AllPurchases() {}
 

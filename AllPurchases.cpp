@@ -64,7 +64,7 @@ void AllPurchases::addMultiplePurchasesRecursive(int count, int account_num) {
     double amt;
     cout << "Enter item name: ";
     getline(cin, it);
-    cout << "Enter date (DD-MM-YYYY): ";
+    cout << "Enter date (YYYY-MM-DD): ";
     getline(cin, d);
     cout << "Enter amount: ";
     cin >> amt;

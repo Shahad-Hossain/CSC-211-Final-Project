@@ -84,17 +84,19 @@ public:
 
 class AllCustomers {
 private:
+    //vector of all customers
     vector<customer> customer_list;
 
     // Recursive function for adding multiple customers
     void addMultipleCustomersRecursive(int count);
 
 public:
+    //Normal default constructors and deconstructors no special input provided
     AllCustomers() {}
     ~AllCustomers() {}
 
     void printAllCustomers();
-    void orderAndSort(bool ascending = true);
+    void orderAndSort(bool ascending, int opt);
     void printSpecificCustomer(int account_num);
 
     void addNewCustomer(string first_name, string last_name, int account_num, string street_address, string city, string state, int zipcode, string phone_num);

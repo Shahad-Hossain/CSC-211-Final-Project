@@ -3,6 +3,8 @@
         "*.js": "javascript",
         "fstream": "cpp",
         "iomanip": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "vector": "cpp",
+        "ios": "cpp"
     }
 }
