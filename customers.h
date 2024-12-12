@@ -1,5 +1,5 @@
-#ifndef ALLCUSTOMERS_H
-#define ALLCUSTOMERS_H
+#ifndef CUSTOMERS_H
+#define CUSTOMERS_H
 
 #include <string>
 #include <vector>

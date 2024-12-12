@@ -1,5 +1,5 @@
-#ifndef ALLPURCHASES_H
-#define ALLPURCHASES_H
+#ifndef PURCHASES_H
+#define PURCHASES_H
 
 #include <string>
 #include <vector>

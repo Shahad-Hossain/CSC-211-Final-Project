@@ -1,4 +1,4 @@
-#include "AllPurchases.h"
+#include "purchases.h"
 
 void AllPurchases::loadPurchases(const string &filename) {
     ifstream inFile(filename);
