@@ -1,31 +1,32 @@
 FirstName,LastName,AccountNum,StreetAddress,City,State,ZipCode,PhoneNumber
-Marques,Brownlee,1001,123 Pixel Ln,Jersey City,NJ,07302,201-555-9876
-Linus,Sebastian,1002,456 Tech Ave,Seattle,WA,98101,206-555-2233
+Andru,Edwards,1029,111 Firmware St,Orlando,FL,32801,407-555-7765
+Arun,Maini,1022,321 Charge Ln,San Diego,CA,92101,619-555-9200
 Austin,Evans,1003,789 Silicon Rd,Austin,TX,78701,512-555-8822
-Justine,Ezarik,1004,321 Review Blvd,Los Angeles,CA,90001,213-555-1344
-Lewis,Hilsenteger,1005,654 USB Ct,Chicago,IL,60601,312-555-9900
-Jonathan,Morrison,1006,101 Gadget St,San Francisco,CA,94102,415-555-7766
-Zack,Nelson,1007,202 Soldering Way,Denver,CO,80202,303-555-5511
-Dave,Lee,1008,505 Frame Dr,Boston,MA,02108,617-555-2244
-Jay,TwoCents,1009,707 Cooler Ln,Portland,OR,97201,503-555-6677
-Paul,Heimlich,1010,999 Raptor Pl,Phoenix,AZ,85004,602-555-4499
-Kyle,Hansen,1011,111 Benchmark Dr,Dallas,TX,75201,214-555-2234
-Sara,Dietschy,1012,222 Creator Ct,Miami,FL,33101,305-555-9901
-Michael,Fisher,1013,333 Docking Ave,New York,NY,10001,212-555-7778
-Lisa,Gade,1014,444 Review Rd,Minneapolis,MN,55401,612-555-3322
-Eber,Anthony,1015,555 Canuck St,Las Vegas,NV,89101,702-555-8812
+Dave,Lee,1008,505 Frame Dr,Boston,MA,2108,617-555-2244
+Dieter,Bohn,1021,789 Byte Ct,Denver,CO,80203,303-555-5544
 Dmitry,Novoselov,1016,777 CPU Pl,Atlanta,GA,30303,404-555-9177
+Eber,Anthony,1015,555 Canuck St,Las Vegas,NV,89101,702-555-8812
+Erica,Griffin,1025,202 Sensor Way,Detroit,MI,48201,313-555-8844
+Jay,TwoCents,1009,707 Cooler Ln,Portland,OR,97201,503-555-6677
+Joanna,Stern,1020,456 Pixel Rd,Houston,TX,77002,713-555-2833
+Jonathan,Morrison,1006,101 Gadget St,San Francisco,CA,94102,415-555-7766
+Judner,Aura,1028,999 Gadget Ln,St. Louis,MO,63101,314-555-2299
+Justine,Ezarik,1004,321 Review Blvd,Los Angeles,CA,90001,213-555-1344
+Karl,Conrad,1030,222 Pixel Ave,New Orleans,LA,70112,504-555-6633
+Kyle,Hansen,1011,111 Benchmark Dr,Dallas,TX,75201,214-555-2234
+Lewis,Hilsenteger,1005,654 USB Ct,Chicago,IL,60601,312-555-9900
+Linus,Sebastian,1002,456 Tech Ave,Seattle,WA,98101,206-555-2233
+Lisa,Gade,1014,444 Review Rd,Minneapolis,MN,55401,612-555-3322
+Mark,Rober,1024,101 Tinker Ave,Portland,ME,4101,207-555-3301
+Marques,Brownlee,1001,123 Pixel Ln,Jersey City,NJ,7302,201-555-9876
+Michael,Fisher,1013,333 Docking Ave,New York,NY,10001,212-555-7778
+Paul,Heimlich,1010,999 Raptor Pl,Phoenix,AZ,85004,602-555-4499
+Quinn,Nelson,1026,505 Lightning Ct,Salt Lake City,UT,84101,801-555-4455
+Rene,Ritchie,1023,654 Dock St,Burlington,VT,5401,802-555-1177
+Sara,Dietschy,1012,222 Creator Ct,Miami,FL,33101,305-555-9901
 Steve,Burke,1017,888 PCB Ln,Charlotte,NC,28202,704-555-7654
 Steve,Walton,1018,999 Thermal Ave,Kansas City,MO,64106,816-555-6622
 Tim,Schiesser,1019,123 Panel St,Philadelphia,PA,19103,215-555-0099
-Joanna,Stern,1020,456 Pixel Rd,Houston,TX,77002,713-555-2833
-Dieter,Bohn,1021,789 Byte Ct,Denver,CO,80203,303-555-5544
-Arun,Maini,1022,321 Charge Ln,San Diego,CA,92101,619-555-9200
-Rene,Ritchie,1023,654 Dock St,Burlington,VT,05401,802-555-1177
-Mark,Rober,1024,101 Tinker Ave,Portland,ME,04101,207-555-3301
-Erica,Griffin,1025,202 Sensor Way,Detroit,MI,48201,313-555-8844
-Quinn,Nelson,1026,505 Lightning Ct,Salt Lake City,UT,84101,801-555-4455
 Tyler,Stalman,1027,707 Lens Dr,Denver,CO,80204,303-555-1122
-Judner,Aura,1028,999 Gadget Ln,St. Louis,MO,63101,314-555-2299
-Andru,Edwards,1029,111 Firmware St,Orlando,FL,32801,407-555-7765
-Karl,Conrad,1030,222 Pixel Ave,New Orleans,LA,70112,504-555-6633
+Zack,Nelson,1007,202 Soldering Way,Denver,CO,80202,303-555-5511
+Tony,Meatballs,1233,123 main,ny,ny,12345,1234123412

@@ -5,7 +5,7 @@ void AllPurchases::loadPurchases(const string &filename) {
     if (!inFile.is_open()) {
         cerr << "Could not open " << filename << " for reading purchases.\n";
         return;
-    }
+    }   
 
     purchase_list.clear();
     bool isHeader = true;

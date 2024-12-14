@@ -120,6 +120,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Phone Number: ";
             getline(cin, ph);
+            
             allCustomers.addNewCustomer(fn, ln, acc, addr, c, s, zip, ph);
         }
         //uses a recursive algorithm to add multiple customers at once
@@ -153,6 +154,7 @@ int main()
         //Entering account number to add a purchase to
         else if (choice == 9)
         {
+            allCustomers.printAllCustomers();   
             cout << "Enter account number for the purchase: ";
             int acc;
             cin >> acc;
